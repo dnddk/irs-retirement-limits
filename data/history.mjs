@@ -3,6 +3,19 @@
 // A year here that the site also has may only fill citation fields left null there.
 
 export const HISTORY = {
+  2021: {
+    year: 2021,
+    announcedOn: null, // IR-2020-244 news release is no longer on irs.gov; figures from the Notice
+    sourceNotice: 'Notice 2020-79',
+    sourceUrl: 'https://www.irs.gov/pub/irs-drop/n-20-79.pdf',
+    base: { under50: 6000, age50plus: 7000 },
+    phaseOut: {
+      single: { lower: 125000, upper: 140000 },
+      hoh: { lower: 125000, upper: 140000 },
+      marriedJoint: { lower: 198000, upper: 208000 },
+      marriedSeparate: { lower: 0, upper: 10000 },
+    },
+  },
   2022: {
     year: 2022,
     announcedOn: '2021-11-04', // IR-2021-216

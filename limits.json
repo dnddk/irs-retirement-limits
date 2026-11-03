@@ -1,12 +1,38 @@
 {
   "meta": {
     "title": "IRS Retirement Account Limits",
-    "coverage": "2022-2026",
+    "coverage": "2021-2026",
     "lastUpdated": "2026-11-03",
     "notes": "Figures are for US IRA and Roth IRA only. Amounts are whole US dollars. rothPhaseOut is the Roth IRA MAGI range [lower, upper]. source is the IRS Notice for that year, or null where no citation has been recorded yet.",
     "license": "MIT"
   },
   "years": [
+    {
+      "year": 2021,
+      "iraContributionLimit": 6000,
+      "iraContributionLimitAge50Plus": 7000,
+      "rothPhaseOut": {
+        "single": [
+          125000,
+          140000
+        ],
+        "headOfHousehold": [
+          125000,
+          140000
+        ],
+        "marriedFilingJointly": [
+          198000,
+          208000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": "Notice 2020-79",
+      "sourceUrl": "https://www.irs.gov/pub/irs-drop/n-20-79.pdf",
+      "announcedOn": null
+    },
     {
       "year": 2022,
       "iraContributionLimit": 6000,
