@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "IRS Retirement Account Limits",
+    "coverage": "2024-2026",
+    "lastUpdated": "2026-11-03",
+    "notes": "Figures are for US IRA and Roth IRA only. Amounts are whole US dollars. rothPhaseOut is the Roth IRA MAGI range [lower, upper]. source is the IRS Notice for that year, or null where no citation has been recorded yet.",
+    "license": "MIT"
+  },
+  "years": [
+    {
+      "year": 2024,
+      "iraContributionLimit": 7000,
+      "iraContributionLimitAge50Plus": 8000,
+      "rothPhaseOut": {
+        "single": [
+          146000,
+          161000
+        ],
+        "headOfHousehold": [
+          146000,
+          161000
+        ],
+        "marriedFilingJointly": [
+          230000,
+          240000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": null,
+      "sourceUrl": null,
+      "announcedOn": null
+    },
+    {
+      "year": 2025,
+      "iraContributionLimit": 7000,
+      "iraContributionLimitAge50Plus": 8000,
+      "rothPhaseOut": {
+        "single": [
+          150000,
+          165000
+        ],
+        "headOfHousehold": [
+          150000,
+          165000
+        ],
+        "marriedFilingJointly": [
+          236000,
+          246000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": "Notice 2024-80",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-limit-increases-to-23500-for-2025-ira-limit-remains-7000",
+      "announcedOn": "2024-11-01"
+    },
+    {
+      "year": 2026,
+      "iraContributionLimit": 7500,
+      "iraContributionLimitAge50Plus": 8600,
+      "rothPhaseOut": {
+        "single": [
+          153000,
+          168000
+        ],
+        "headOfHousehold": [
+          153000,
+          168000
+        ],
+        "marriedFilingJointly": [
+          242000,
+          252000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": "Notice 2025-67",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+      "announcedOn": "2025-11-13"
+    }
+  ]
+}

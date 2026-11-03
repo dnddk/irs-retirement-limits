@@ -1,0 +1,51 @@
+# IRS Retirement Account Limits
+
+Contribution limits and Roth IRA income phase-out ranges by year,
+with the IRS Notice cited for each year.
+
+This is a third-party compilation of public IRS figures. It is not published or
+endorsed by the IRS. If a figure here disagrees with the IRS, the IRS is right.
+
+## Coverage
+2024–2026 · IRA and Roth IRA only (not 401k/403b)
+
+## 2026
+| | Under 50 | Age 50+ |
+|---|---:|---:|
+| IRA contribution limit | $7,500 | $8,600 |
+
+Roth IRA MAGI phase-out (2026):
+Single / HoH $153,000–$168,000 · MFJ $242,000–$252,000 · MFS $0–$10,000
+
+Source: [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500)
+
+## All years
+| Year | IRA limit | Age 50+ limit | Single / HoH phase-out | MFJ phase-out | MFS phase-out | Source |
+|---|---:|---:|---|---|---|---|
+| 2024 | $7,000 | $8,000 | $146,000–$161,000 | $230,000–$240,000 | $0–$10,000 | TODO: source |
+| 2025 | $7,000 | $8,000 | $150,000–$165,000 | $236,000–$246,000 | $0–$10,000 | [IRS Notice 2024-80](https://www.irs.gov/newsroom/401k-limit-increases-to-23500-for-2025-ira-limit-remains-7000) |
+| 2026 | $7,500 | $8,600 | $153,000–$168,000 | $242,000–$252,000 | $0–$10,000 | [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) |
+
+TODO: source — 2024 has no IRS Notice recorded yet.
+
+## How the reduced contribution limit is calculated
+
+The IRS method is Pub 590-A Worksheet 2-2: scale the contribution limit by the
+percentage of the phase-out range remaining, **round the result up to the nearest
+$10, and enter $200 for any result between $0 and $200**.
+
+Note: the age-50 catch-up is included in the base the reduction is applied to, so a
+50+ filer in the middle of the range is reduced from the age-50+ limit (for example
+$8,600 in 2026), not from $7,500.
+
+## Data format
+`limits.json` — machine-readable, one object per year. Amounts are whole US dollars;
+phase-out ranges are `[lower, upper]` MAGI. Every entry carries a `source` field
+(the IRS Notice) and `sourceUrl`. Entries with `source: null` still need a citation (see TODO).
+
+## Related
+An interactive calculator built on this dataset: https://rothiratools.com/
+
+## License
+MIT for the compilation and scripts. The underlying figures are published by the IRS
+and are public information.
