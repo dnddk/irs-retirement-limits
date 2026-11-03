@@ -22,11 +22,9 @@ Source: [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-t
 ## All years
 | Year | IRA limit | Age 50+ limit | Single / HoH phase-out | MFJ phase-out | MFS phase-out | Source |
 |---|---:|---:|---|---|---|---|
-| 2024 | $7,000 | $8,000 | $146,000–$161,000 | $230,000–$240,000 | $0–$10,000 | TODO: source |
+| 2024 | $7,000 | $8,000 | $146,000–$161,000 | $230,000–$240,000 | $0–$10,000 | [IRS Notice 2023-75](https://www.irs.gov/newsroom/401k-limit-increases-to-23000-for-2024-ira-limit-rises-to-7000) |
 | 2025 | $7,000 | $8,000 | $150,000–$165,000 | $236,000–$246,000 | $0–$10,000 | [IRS Notice 2024-80](https://www.irs.gov/newsroom/401k-limit-increases-to-23500-for-2025-ira-limit-remains-7000) |
 | 2026 | $7,500 | $8,600 | $153,000–$168,000 | $242,000–$252,000 | $0–$10,000 | [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) |
-
-TODO: source — 2024 has no IRS Notice recorded yet.
 
 ## How the reduced contribution limit is calculated
 
