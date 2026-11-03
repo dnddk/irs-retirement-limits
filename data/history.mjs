@@ -3,6 +3,19 @@
 // A year here that the site also has may only fill citation fields left null there.
 
 export const HISTORY = {
+  2019: {
+    year: 2019,
+    announcedOn: '2018-11-01', // IR-2018-211
+    sourceNotice: 'Notice 2018-83',
+    sourceUrl: 'https://www.irs.gov/newsroom/401k-contribution-limit-increases-to-19000-for-2019-ira-limit-increases-to-6000',
+    base: { under50: 6000, age50plus: 7000 },
+    phaseOut: {
+      single: { lower: 122000, upper: 137000 },
+      hoh: { lower: 122000, upper: 137000 },
+      marriedJoint: { lower: 193000, upper: 203000 },
+      marriedSeparate: { lower: 0, upper: 10000 },
+    },
+  },
   2020: {
     year: 2020,
     announcedOn: '2019-11-06', // IR-2019-179

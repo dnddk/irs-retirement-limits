@@ -7,7 +7,7 @@ This is a third-party compilation of public IRS figures. It is not published or
 endorsed by the IRS. If a figure here disagrees with the IRS, the IRS is right.
 
 ## Coverage
-2020–2026 · IRA and Roth IRA only (not 401k/403b)
+2019–2026 · IRA and Roth IRA only (not 401k/403b)
 
 ## 2026
 | | Under 50 | Age 50+ |
@@ -22,6 +22,7 @@ Source: [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-t
 ## All years
 | Year | IRA limit | Age 50+ limit | Single / HoH phase-out | MFJ phase-out | MFS phase-out | Source |
 |---|---:|---:|---|---|---|---|
+| 2019 | $6,000 | $7,000 | $122,000–$137,000 | $193,000–$203,000 | $0–$10,000 | [IRS Notice 2018-83](https://www.irs.gov/newsroom/401k-contribution-limit-increases-to-19000-for-2019-ira-limit-increases-to-6000) |
 | 2020 | $6,000 | $7,000 | $124,000–$139,000 | $196,000–$206,000 | $0–$10,000 | [IRS Notice 2019-59](https://www.irs.gov/newsroom/401k-contribution-limit-increases-to-19500-for-2020-catch-up-limit-rises-to-6500) |
 | 2021 | $6,000 | $7,000 | $125,000–$140,000 | $198,000–$208,000 | $0–$10,000 | [IRS Notice 2020-79](https://www.irs.gov/pub/irs-drop/n-20-79.pdf) |
 | 2022 | $6,000 | $7,000 | $129,000–$144,000 | $204,000–$214,000 | $0–$10,000 | [IRS Notice 2021-61](https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500) |
