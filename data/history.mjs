@@ -3,6 +3,19 @@
 // A year here that the site also has may only fill citation fields left null there.
 
 export const HISTORY = {
+  2020: {
+    year: 2020,
+    announcedOn: '2019-11-06', // IR-2019-179
+    sourceNotice: 'Notice 2019-59',
+    sourceUrl: 'https://www.irs.gov/newsroom/401k-contribution-limit-increases-to-19500-for-2020-catch-up-limit-rises-to-6500',
+    base: { under50: 6000, age50plus: 7000 },
+    phaseOut: {
+      single: { lower: 124000, upper: 139000 },
+      hoh: { lower: 124000, upper: 139000 },
+      marriedJoint: { lower: 196000, upper: 206000 },
+      marriedSeparate: { lower: 0, upper: 10000 },
+    },
+  },
   2021: {
     year: 2021,
     announcedOn: null, // IR-2020-244 news release is no longer on irs.gov; figures from the Notice

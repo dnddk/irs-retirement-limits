@@ -1,12 +1,38 @@
 {
   "meta": {
     "title": "IRS Retirement Account Limits",
-    "coverage": "2021-2026",
+    "coverage": "2020-2026",
     "lastUpdated": "2026-11-03",
     "notes": "Figures are for US IRA and Roth IRA only. Amounts are whole US dollars. rothPhaseOut is the Roth IRA MAGI range [lower, upper]. source is the IRS Notice for that year, or null where no citation has been recorded yet.",
     "license": "MIT"
   },
   "years": [
+    {
+      "year": 2020,
+      "iraContributionLimit": 6000,
+      "iraContributionLimitAge50Plus": 7000,
+      "rothPhaseOut": {
+        "single": [
+          124000,
+          139000
+        ],
+        "headOfHousehold": [
+          124000,
+          139000
+        ],
+        "marriedFilingJointly": [
+          196000,
+          206000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": "Notice 2019-59",
+      "sourceUrl": "https://www.irs.gov/newsroom/401k-contribution-limit-increases-to-19500-for-2020-catch-up-limit-rises-to-6500",
+      "announcedOn": "2019-11-06"
+    },
     {
       "year": 2021,
       "iraContributionLimit": 6000,
