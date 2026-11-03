@@ -5,10 +5,13 @@
 //
 // Only years whose figures are all published are exported. If the exported data is unchanged,
 // nothing is written. When files change, the suggested commit message goes to stdout.
+//
+// data/history.mjs adds years the site does not carry and fills missing citations. It never
+// overrides a figure: a number that disagrees with the site's table stops the build.
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { resolve, join } from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { resolve, join, dirname } from 'node:path';
+import { pathToFileURL, fileURLToPath } from 'node:url';
 
 const [src, outDir = '.'] = process.argv.slice(2);
 if (!src) {
@@ -16,7 +19,28 @@ if (!src) {
   process.exit(2);
 }
 
-const { LIMITS, announcedIn } = await import(pathToFileURL(resolve(src)).href);
+const { LIMITS: SITE, announcedIn } = await import(pathToFileURL(resolve(src)).href);
+const { HISTORY } = await import(pathToFileURL(join(dirname(fileURLToPath(import.meta.url)), '../data/history.mjs')).href);
+
+const LIMITS = { ...SITE };
+for (const h of Object.values(HISTORY)) {
+  const s = SITE[h.year];
+  if (!s || !announcedIn(SITE, h.year)) {
+    LIMITS[h.year] = h;
+    continue;
+  }
+  for (const k of ['base', 'phaseOut']) {
+    if (h[k] && JSON.stringify(h[k]) !== JSON.stringify(s[k])) {
+      throw new Error(`data/history.mjs ${h.year}.${k} disagrees with ${src}`);
+    }
+  }
+  const merged = { ...s };
+  for (const k of ['announcedOn', 'sourceNotice', 'sourceUrl']) {
+    if (s[k] != null && h[k] != null && s[k] !== h[k]) throw new Error(`data/history.mjs ${h.year}.${k} disagrees with ${src}`);
+    merged[k] = s[k] ?? h[k] ?? null;
+  }
+  LIMITS[h.year] = merged;
+}
 
 const years = Object.keys(LIMITS)
   .map(Number)
