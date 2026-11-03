@@ -7,7 +7,7 @@ This is a third-party compilation of public IRS figures. It is not published or
 endorsed by the IRS. If a figure here disagrees with the IRS, the IRS is right.
 
 ## Coverage
-2023–2026 · IRA and Roth IRA only (not 401k/403b)
+2022–2026 · IRA and Roth IRA only (not 401k/403b)
 
 ## 2026
 | | Under 50 | Age 50+ |
@@ -22,6 +22,7 @@ Source: [IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-t
 ## All years
 | Year | IRA limit | Age 50+ limit | Single / HoH phase-out | MFJ phase-out | MFS phase-out | Source |
 |---|---:|---:|---|---|---|---|
+| 2022 | $6,000 | $7,000 | $129,000–$144,000 | $204,000–$214,000 | $0–$10,000 | [IRS Notice 2021-61](https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500) |
 | 2023 | $6,500 | $7,500 | $138,000–$153,000 | $218,000–$228,000 | $0–$10,000 | [IRS Notice 2022-55](https://www.irs.gov/newsroom/401k-limit-increases-to-22500-for-2023-ira-limit-rises-to-6500) |
 | 2024 | $7,000 | $8,000 | $146,000–$161,000 | $230,000–$240,000 | $0–$10,000 | [IRS Notice 2023-75](https://www.irs.gov/newsroom/401k-limit-increases-to-23000-for-2024-ira-limit-rises-to-7000) |
 | 2025 | $7,000 | $8,000 | $150,000–$165,000 | $236,000–$246,000 | $0–$10,000 | [IRS Notice 2024-80](https://www.irs.gov/newsroom/401k-limit-increases-to-23500-for-2025-ira-limit-remains-7000) |

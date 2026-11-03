@@ -1,12 +1,38 @@
 {
   "meta": {
     "title": "IRS Retirement Account Limits",
-    "coverage": "2023-2026",
+    "coverage": "2022-2026",
     "lastUpdated": "2026-11-03",
     "notes": "Figures are for US IRA and Roth IRA only. Amounts are whole US dollars. rothPhaseOut is the Roth IRA MAGI range [lower, upper]. source is the IRS Notice for that year, or null where no citation has been recorded yet.",
     "license": "MIT"
   },
   "years": [
+    {
+      "year": 2022,
+      "iraContributionLimit": 6000,
+      "iraContributionLimitAge50Plus": 7000,
+      "rothPhaseOut": {
+        "single": [
+          129000,
+          144000
+        ],
+        "headOfHousehold": [
+          129000,
+          144000
+        ],
+        "marriedFilingJointly": [
+          204000,
+          214000
+        ],
+        "marriedFilingSeparately": [
+          0,
+          10000
+        ]
+      },
+      "source": "Notice 2021-61",
+      "sourceUrl": "https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500",
+      "announcedOn": "2021-11-04"
+    },
     {
       "year": 2023,
       "iraContributionLimit": 6500,

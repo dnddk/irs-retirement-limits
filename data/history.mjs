@@ -3,6 +3,19 @@
 // A year here that the site also has may only fill citation fields left null there.
 
 export const HISTORY = {
+  2022: {
+    year: 2022,
+    announcedOn: '2021-11-04', // IR-2021-216
+    sourceNotice: 'Notice 2021-61',
+    sourceUrl: 'https://www.irs.gov/newsroom/irs-announces-401k-limit-increases-to-20500',
+    base: { under50: 6000, age50plus: 7000 },
+    phaseOut: {
+      single: { lower: 129000, upper: 144000 },
+      hoh: { lower: 129000, upper: 144000 },
+      marriedJoint: { lower: 204000, upper: 214000 },
+      marriedSeparate: { lower: 0, upper: 10000 },
+    },
+  },
   2023: {
     year: 2023,
     announcedOn: '2022-10-21', // IR-2022-188
